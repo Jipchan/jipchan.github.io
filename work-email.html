@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Marketing — Luca Ziprani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Luca Ziprani</a>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a>Work</a>
+        <div class="dropdown">
+          <a href="work-paid-social.html">Paid Social</a>
+          <a href="work-email.html">Email Marketing</a>
+          <a href="work-ecommerce.html">eCommerce Content</a>
+          <a href="work-design.html">Design &amp; Editorial</a>
+          <a href="work-content.html">Content &amp; Copywriting</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Work / Email Marketing</span>
+    <h1>Klaviyo Campaigns — ZigZagZurich</h1>
+    <p class="lead">Campaign design for ZigZagZurich's subscriber base across English and German segments — from layout and art direction through to copy, segmentation and send.</p>
+  </div>
+</section>
+
+<section class="container">
+
+  <div class="section">
+    <h2>Du Pasquier &amp; Sowden knitted collection launch</h2>
+    <p class="desc">A product launch campaign introducing eight knitted designs by Memphis Group founders Nathalie Du Pasquier and George Sowden, sent to the German-speaking subscriber segment.</p>
+    <div class="img-row cols-2">
+      <div class="img-card"><img src="images/email-dupasquier-1.jpg" alt="Campaign header"><p class="cap">Campaign header — hero image, brand intro</p></div>
+      <div class="img-card"><img src="images/email-dupasquier-2.jpg" alt="Product grid Merino"><p class="cap">Product grid — Merino wool collection</p></div>
+    </div>
+    <div class="img-row cols-2" style="margin-top:20px;">
+      <div class="img-card"><img src="images/email-dupasquier-3.jpg" alt="Product grid NZ wool"><p class="cap">Product grid — New Zealand wool collection</p></div>
+      <div class="img-card"><img src="images/email-dupasquier-4.jpg" alt="Brand values footer"><p class="cap">Brand values &amp; campaign footer</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Spring Collection '22 seasonal campaign</h2>
+    <p class="desc">A seasonal promotional send introducing the Spring '22 collection with editorial lifestyle copy and a full product grid.</p>
+    <div class="img-row cols-3">
+      <div class="img-card"><img src="images/email-spring-1.jpg" alt="Campaign header"><p class="cap">Campaign header — hero &amp; intro copy</p></div>
+      <div class="img-card"><img src="images/email-spring-2.jpg" alt="Product grid textiles"><p class="cap">Product grid — textiles &amp; bedding</p></div>
+      <div class="img-card"><img src="images/email-spring-3.jpg" alt="Product grid art prints"><p class="cap">Product grid — art prints &amp; footer</p></div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><a href="index.html" class="logo">Luca Ziprani</a></div>
+    <ul class="footer-links">
+      <li><a href="work-paid-social.html">Paid Social</a></li>
+      <li><a href="work-email.html">Email</a></li>
+      <li><a href="work-ecommerce.html">eCommerce</a></li>
+      <li><a href="work-design.html">Design</a></li>
+      <li><a href="work-content.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">&copy; 2026 Luca Ziprani. Zürich &amp; Milan.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  document.querySelectorAll('.has-dropdown > a').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (window.innerWidth <= 640) { e.preventDefault(); el.parentElement.classList.toggle('open'); }
+    });
+  });
+</script>
+
+</body>
+</html>

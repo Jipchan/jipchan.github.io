@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Luca Ziprani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Luca Ziprani</a>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a>Work</a>
+        <div class="dropdown">
+          <a href="work-paid-social.html">Paid Social</a>
+          <a href="work-email.html">Email Marketing</a>
+          <a href="work-ecommerce.html">eCommerce Content</a>
+          <a href="work-design.html">Design &amp; Editorial</a>
+          <a href="work-content.html">Content &amp; Copywriting</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="contact-block container">
+  <span class="eyebrow">Get in touch</span>
+  <h1>Let's talk.</h1>
+  <p class="lead">Open to digital marketing, eCommerce and content roles across Switzerland and Europe. Based between Zürich and Milan.</p>
+  <a href="mailto:lziprani@gmail.com" class="contact-email">lziprani@gmail.com</a>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><a href="index.html" class="logo">Luca Ziprani</a></div>
+    <ul class="footer-links">
+      <li><a href="work-paid-social.html">Paid Social</a></li>
+      <li><a href="work-email.html">Email</a></li>
+      <li><a href="work-ecommerce.html">eCommerce</a></li>
+      <li><a href="work-design.html">Design</a></li>
+      <li><a href="work-content.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">&copy; 2026 Luca Ziprani. Zürich &amp; Milan.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  document.querySelectorAll('.has-dropdown > a').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (window.innerWidth <= 640) { e.preventDefault(); el.parentElement.classList.toggle('open'); }
+    });
+  });
+</script>
+
+</body>
+</html>

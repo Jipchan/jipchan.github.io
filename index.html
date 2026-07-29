@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luca Ziprani — Digital Marketing &amp; eCommerce</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Luca Ziprani</a>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a>Work</a>
+        <div class="dropdown">
+          <a href="work-paid-social.html">Paid Social</a>
+          <a href="work-email.html">Email Marketing</a>
+          <a href="work-ecommerce.html">eCommerce Content</a>
+          <a href="work-design.html">Design &amp; Editorial</a>
+          <a href="work-content.html">Content &amp; Copywriting</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Digital Marketing &amp; eCommerce</span>
+        <h1>Marketing that ships,<br>not just decks.</h1>
+        <p class="lead">Eight years across CRM, paid social, email marketing, content and eCommerce — for Swiss and European brands spanning FinTech, home textiles and consumer goods. Based between Zürich and Milan.</p>
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn-primary">View work</a>
+          <a href="contact.html" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div>
+        <svg class="zigzag" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+          <polyline points="20,260 90,90 160,220 230,60 300,200 380,40" fill="none" stroke="#24466B" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+          <polyline points="20,260 90,90 160,220 230,60 300,200 380,40" fill="none" stroke="#C0923F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="2 14" opacity="0.9" transform="translate(10,14)"/>
+          <circle cx="20" cy="260" r="5" fill="#1C2126"/>
+          <circle cx="380" cy="40" r="5" fill="#1C2126"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="container">
+  <div class="cat-grid">
+
+    <a href="work-paid-social.html" class="cat-card">
+      <div class="thumb"><img src="images/paid-social-1.jpg" alt="Paid social ad creative"></div>
+      <div class="body">
+        <h3>Paid Social</h3>
+        <p>Meta ad creative and campaign management for ZigZagZurich, EN &amp; DE markets.</p>
+      </div>
+    </a>
+
+    <a href="work-email.html" class="cat-card">
+      <div class="thumb"><img src="images/email-dupasquier-1.jpg" alt="Email campaign design"></div>
+      <div class="body">
+        <h3>Email Marketing</h3>
+        <p>Klaviyo campaign design, copy and segmentation across two full collection launches.</p>
+      </div>
+    </a>
+
+    <a href="work-ecommerce.html" class="cat-card">
+      <div class="thumb"><img src="images/nanai-1.jpg" alt="eCommerce product content"></div>
+      <div class="body">
+        <h3>eCommerce Content</h3>
+        <p>Product presentation and merchandising for nanai berlin, vegan baby footwear.</p>
+      </div>
+    </a>
+
+    <a href="work-design.html" class="cat-card">
+      <div class="thumb"><img src="images/design-switzerland-1.jpg" alt="Editorial design brochure"></div>
+      <div class="body">
+        <h3>Design &amp; Editorial</h3>
+        <p>Branded info-graphic layouts for Skillfinder International's location-guide series.</p>
+      </div>
+    </a>
+
+    <a href="work-content.html" class="cat-card">
+      <div class="thumb"><img src="images/article-ireland.jpg" alt="Published articles"></div>
+      <div class="body">
+        <h3>Content &amp; Copywriting</h3>
+        <p>Published B2B thought leadership for a FinTech recruitment audience, LinkedIn Pulse.</p>
+      </div>
+    </a>
+
+    <a href="contact.html" class="cat-card">
+      <div class="thumb" style="display:flex;align-items:center;justify-content:center;background:var(--ink);">
+        <span style="font-family:'Newsreader',serif;color:var(--paper);font-size:1.6rem;padding:20px;text-align:center;">Let's talk</span>
+      </div>
+      <div class="body">
+        <h3>Get in touch</h3>
+        <p>Open to digital marketing, eCommerce and content roles across Switzerland and Europe.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="index.html" class="logo">Luca Ziprani</a>
+    </div>
+    <ul class="footer-links">
+      <li><a href="work-paid-social.html">Paid Social</a></li>
+      <li><a href="work-email.html">Email</a></li>
+      <li><a href="work-ecommerce.html">eCommerce</a></li>
+      <li><a href="work-design.html">Design</a></li>
+      <li><a href="work-content.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">
+    &copy; 2026 Luca Ziprani. Zürich &amp; Milan.
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  document.querySelectorAll('.has-dropdown > a').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (window.innerWidth <= 640) {
+        e.preventDefault();
+        el.parentElement.classList.toggle('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

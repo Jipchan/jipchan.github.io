@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eCommerce Content — Luca Ziprani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Luca Ziprani</a>
+    <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li class="has-dropdown">
+        <a>Work</a>
+        <div class="dropdown">
+          <a href="work-paid-social.html">Paid Social</a>
+          <a href="work-email.html">Email Marketing</a>
+          <a href="work-ecommerce.html">eCommerce Content</a>
+          <a href="work-design.html">Design &amp; Editorial</a>
+          <a href="work-content.html">Content &amp; Copywriting</a>
+        </div>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Get in touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow">Work / eCommerce Content</span>
+    <h1>Product Content — nanai berlin</h1>
+    <p class="lead">Product content and store presentation for nanai berlin, a vegan baby shoe eCommerce brand. Work included product presentation, content structure and conversion-focused merchandising across the online store.</p>
+  </div>
+</section>
+
+<section class="container">
+  <div class="section">
+    <h2>Product &amp; merchandising presentation</h2>
+    <p class="desc">Clean, conversion-led product pages balancing lifestyle context with clear pricing and material information.</p>
+    <div class="img-row cols-2">
+      <div class="img-card"><img src="images/nanai-1.jpg" alt="Salvia crawling shoes"><p class="cap">Product presentation — Salvia crawling shoes</p></div>
+      <div class="img-card"><img src="images/nanai-2.jpg" alt="Gift card merchandising"><p class="cap">Gift card merchandising — lifestyle presentation</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div><a href="index.html" class="logo">Luca Ziprani</a></div>
+    <ul class="footer-links">
+      <li><a href="work-paid-social.html">Paid Social</a></li>
+      <li><a href="work-email.html">Email</a></li>
+      <li><a href="work-ecommerce.html">eCommerce</a></li>
+      <li><a href="work-design.html">Design</a></li>
+      <li><a href="work-content.html">Writing</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="container footer-bottom">&copy; 2026 Luca Ziprani. Zürich &amp; Milan.</div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const links = document.getElementById('navLinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  document.querySelectorAll('.has-dropdown > a').forEach(el => {
+    el.addEventListener('click', (e) => {
+      if (window.innerWidth <= 640) { e.preventDefault(); el.parentElement.classList.toggle('open'); }
+    });
+  });
+</script>
+
+</body>
+</html>
